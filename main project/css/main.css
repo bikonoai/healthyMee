@@ -1,0 +1,281 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Marck Script', cursive;
+font-family: 'Kaushan Script', cursive;*/
+div {
+	box-sizing: border-box;
+}
+
+.intro {
+	background: url(../img/main.jpg) no-repeat center top / cover;
+	background-color: rgba(0,0,0,.5);
+  background-blend-mode: darken;
+	height: 660px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.intro__inner {
+	width: 880px;
+	margin: 60px auto 0;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.intro__title {
+	font-size: 60px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.intro__title:before {
+	content: "";
+	display: block;
+	width: 80px;
+	height: 4px;
+	background-color: #fff;
+	margin: 35px auto;
+}
+
+.intro__logo {
+	font-size: 60px;
+	text-align: center;
+	color: #F71098;
+	font-family: 'Kaushan Script', cursive;
+}
+
+.intro__logo:after {
+	content: "";
+	display: block;
+	width: 80px;
+	height: 4px;
+	background-color: #fff;
+	margin: 35px auto;
+}
+
+/*.intro__btn {
+	display: inline-block;
+  width: 150px;
+  height: 30px;
+	border: 4px solid #F71098;
+	border-radius: 10px;
+	color: #fff;
+	text-align: center;
+	padding-top: 8px;
+	margin-top: 5px;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.intro__btn:hover {
+  border-color: #0ED3A3;
+  color: #0ED3A3;
+  transition: .4s linear;
+}
+*/
+header {
+	padding-top: 30px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+} 
+
+.header__logo {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 35px;
+	font-weight: 700;
+	color: #fff;
+	transition: color .2s linear;
+}
+
+.header__logo:hover {
+	color: #F71098;
+}
+
+.nav {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.nav__link {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 15px;
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+	transition: color .2s linear;
+}
+
+.nav a {
+	text-decoration: none;
+}
+
+.nav__link:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: #F71098;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+}
+
+.nav__link:hover {
+	color: #F71098;
+}
+
+.nav__link:hover:after {
+	opacity: 1;
+}
+
+.main {
+	height: 650px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	line-height: 1.5;
+	color: #3F4443;
+}
+
+.main__title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.main__title h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.main__title p {
+	font-size: 20px;
+}
+
+.main__cards {
+	display: flex;
+	justify-content: space-around;
+}
+
+.main__item {
+	width: 360px;
+	height: 330px;
+	/*	box-shadow: 0 0 5px rgba(0,0,0,0.3);*/
+}
+
+.main__item img {
+	border-radius: 5px;
+  width: 360px;
+  height: 200px;
+}
+
+.main__item h3 {
+	margin-top: 10px;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.main-item p {
+	display: block;
+	font-size: 12px;
+}
+
+.quote {
+  width: 100%;
+  height: 300px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+/*  background: #FFAAD2;*/
+/*  background: #4CD6D0;*/
+  background: #42B5B3;
+  opacity: .9;
+}
+
+.quote__heading {
+	font-size: 23px;
+	text-align: center;
+/*	font-family: 'Marck Script', cursive;*/
+}
+
+.quote__author {
+	font-size: 30px;
+	text-align: center;
+	margin-top: 10px;
+	font-family: 'Marck Script', cursive;
+}
+
+.health {
+	width: 100%;
+	height: 500px;
+	padding-top: 140px;
+	line-height: 2;
+	font-size: 20px;
+	text-align: justify;
+}
+
+footer {
+  width: 100%;
+  height: 110px;
+	position: absolute;
+	z-index: 1000;
+	background: #FFAAD2;
+}
+
+footer h1 {
+	font-size: 35px;
+	margin-top: 35px;
+	color: #fff;
+	font-family: 'Kaushan Script', cursive;
+	width: 30%;
+	float: left;
+}
+
+.footer__links ul {
+	width: 400px;
+	list-style: none;
+	float: right;
+}
+
+.footer__links li {
+	display: inline-block;
+	margin-left: 82px;
+	margin-top: 40px;
+}
+
+.footer__links img {
+  width: 35px;
+  height: 35px;
+}

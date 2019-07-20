@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Marck+Script|Montserrat:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/weight.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+	<title>healthyMe</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__logo">healthyMe</div>
+				<div class="nav">
+					<a class="nav__link" href="index.html">Главная</a>
+					<a class="nav__link" href="food.html">Питание</a>
+					<a class="nav__link" href="workout.html">Тренировки</a>
+					<a class="nav__link" href="weight.html">Вес</a>
+					<a class="nav__link" href="advice.html">Дополнительное</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="calories">
+		<div class="container">
+			<h1>Баланс калорий</h1>
+			<h3>Закон термодинамики:</h3>
+			<p>Если потреблять больше калорий, чем тратить, вес тела будет увеличиваться. Если тратить больше калорий, чем потреблять, вес тела будет снижаться. Но есть и нюанс: калория – это всего лишь физическая единица, а наше тело – не закрытая система. Потребляемая еда также влияет на метаболизм и гормональный фон, который может способствовать накоплению жира вместо его расхода, и наоборот. Поэтому очень важно обращать внимание и на виды продуктов и напитков, которые мы потребляем. Тренировки же увеличивают расход калорий и способствуют повышению метаболизма.</p>
+		</div>
+	</section>
+	<section class="tablet">
+		<div class="container">
+			<ul>
+				<li>
+					<img src="img/table.png">
+				</li>
+				<li>
+					<img src="img/table2.png">
+				</li>
+				<li>
+					<img src="img/table3.png">
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="calc">
+		<div class="container">
+			<h1>Калькулятор cуточной нормы калорий(По формуле Харриса-Бенедикта)</h1>
+			<label>Женщина:
+			  <input id="female" type="radio" name="gender" onchange="calsPerDay()">
+			</label>
+			<label>Мужчина:
+			  <input id="male" type="radio" name="gender" onchange="calsPerDay()" checked>
+			</label>
+			<label>Возраст:
+			  <input id="age" type="number" oninput="calsPerDay()" value="30">
+			  (лет)
+			</label>
+			<label>Рост:
+			  <input id="height" type="number" oninput="calsPerDay()" value="170">
+			  (см)
+			</label>
+			<label>Вес:
+			  <input id="weight" type="number" oninput="calsPerDay()" value="80">
+			  (кг)
+			</label>
+			<label>
+			  Суточная норма потребления калорий: <span id="totalCals"></span>(ккал)
+			</label>
+		</div>
+	</section>
+	<section class="progress">
+		<div class="container">
+			<h1>Масса тела</h1>
+			<p>Масса тела – это не только мышцы и жир, но также вода, кровь, внутренние органы, продукты отхода жизнедеятельности, различные ткани и кости. На весах вы видите общую массу тела, но не можете сказать, что из этой массы составляет жир, а что – другие компоненты тела. Если вы наберете или потеряете несколько сотен граммов в течении дня – это может быть всего лишь изменение содержания жидкости в организме. Гораздо точнее можно отслеживать прогресс изменения веса, взвешиваясь раз в неделю, рано утром натощак.</p>
+		</div>
+	</section>
+	<section class="idealWeight">
+		<div class="container">
+			<h1>Ваш идеальный вес(По формуле Брокка)</h1>
+			<label>Женщина:
+			  <input id="femalee" type="radio" name="gender" onchange="idealWeight()">
+			</label>
+			<label>Мужчина:
+			  <input id="malee" type="radio" name="gender" onchange="idealWeight()" checked>
+			</label>
+			<label>Рост:
+			  <input id="heightt" type="number" oninput="idealWeight()" value="170">
+			  (см)
+			</label>
+			<label>
+			  Ваш идеальный вес: <span id="yourIdealWeight"></span>(кг)
+			</label>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<h1>healthyMe</h1>
+			<div class="footer__links">
+				<ul>
+					<li>
+						<a href="https://www.instagram.com/bikonoai/">
+							<img src="img/instagram.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+					    <img src="img/facebook.png">
+				    </a>
+				  </li>
+					<li>
+						<a href="#">
+							<img src="img/twitter.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>s
+</body>
+</html>

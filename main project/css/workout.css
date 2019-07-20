@@ -1,0 +1,185 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+header {
+	padding-top: 30px;
+	width: 100%;
+	height: 110px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	background: #FFAAD2;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+} 
+
+.header__logo {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 35px;
+	font-weight: 700;
+	color: #fff;
+	transition: color .2s linear;
+}
+
+.header__logo:hover {
+	color: #F71098;
+}
+
+.nav {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.nav__link {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 15px;
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+	transition: color .2s linear;
+}
+
+.nav a {
+	text-decoration: none;
+}
+
+.nav__link:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: #F71098;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+}
+
+.nav__link:hover {
+	color: #F71098;
+}
+
+.nav__link:hover:after {
+	opacity: 1;
+}
+
+.goals {
+	width: 100%;
+	height: 750px;
+	padding-top: 150px;
+	line-height: 2;
+}
+
+.goals__heading {
+	margin-bottom: 50px;
+}
+
+.goals p, li {
+	font-size: 20px;
+}
+
+.activity {
+	width: 100%;
+  height: 330px;
+  margin-top: 50px;
+  line-height: 2;
+}
+
+.activity p {
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+
+.videos {
+	width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.videos iframe {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.progress {
+	width: 100%;
+	height: 500px; 
+	line-height: 2;
+	font-size: 20px;
+}
+
+.progress h1 {
+	margin-top: 50px;
+}
+
+.progress p {
+	margin-top: 50px;
+	text-align: justify;
+}
+
+.weightloss {
+	width: 100%;
+	padding-top: 70px;
+	padding-bottom: 70px;
+  padding-left: 250px;
+}
+
+footer {
+  width: 100%;
+  height: 110px;
+	position: absolute;
+	z-index: 1000;
+	background: #FFAAD2;
+}
+
+footer h1 {
+	font-size: 35px;
+	margin-top: 35px;
+	color: #fff;
+	font-family: 'Kaushan Script', cursive;
+	width: 30%;
+	float: left;
+}
+
+.footer__links ul {
+	width: 400px;
+	list-style: none;
+	float: right;
+}
+
+.footer__links li {
+	display: inline-block;
+	margin-left: 82px;
+	margin-top: 40px;
+}
+
+.footer__links img {
+  width: 35px;
+  height: 35px;
+}
